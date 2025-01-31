@@ -1,22 +1,22 @@
 {
-  "name": "servershards-node-console-streamer",
+  "name": "ss-daemon",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple websocket server to monitor docker containers output",
+  "main": "websocket-server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Wordlesschunk/servershards-node-console-streamer.git"
+    "url": "git+https://github.com/Wordlesschunk/ss-daemon.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Wordlesschunk/servershards-node-console-streamer/issues"
+    "url": "https://github.com/Wordlesschunk/ss-daemon/issues"
   },
-  "homepage": "https://github.com/Wordlesschunk/servershards-node-console-streamer#readme",
+  "homepage": "https://github.com/Wordlesschunk/ss-daemon#readme",
   "dependencies": {
     "ws": "^8.18.0"
   }
