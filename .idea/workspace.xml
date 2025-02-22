@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a28c4e9a-a9aa-43fd-9d20-be7399ea53d7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websocket-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/websocket-server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +61,7 @@
       <workItem from="1738311568020" duration="534000" />
       <workItem from="1738351023852" duration="506000" />
       <workItem from="1738353925343" duration="1234000" />
-      <workItem from="1740242530262" duration="1769000" />
+      <workItem from="1740242530262" duration="2603000" />
     </task>
     <servers />
   </component>

@@ -20,8 +20,18 @@ const options = {
 // Create HTTPS server with SSL configuration
 const server = https.createServer(options);
 
-// Create WebSocket server on top of the HTTPS server
-const wss = new WebSocket.Server({ server });
+// Create WebSocket server on top of the HTTPS server with CORS check
+const wss = new WebSocket.Server({
+    server,
+    verifyClient: (info, cb) => {
+        const allowedOrigin = 'https://your-web-server.com'; // Replace with your web server's origin
+        if (info.origin === allowedOrigin) {
+            cb(true);
+        } else {
+            cb(false, 403, 'Forbidden'); // Reject if origin is not allowed
+        }
+    }
+});
 
 console.log(`WebSocket server running on wss://localhost:${PORT}`);
 console.log(`Streaming logs for container: ${CONTAINER_ID}`);
