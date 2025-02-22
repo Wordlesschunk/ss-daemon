@@ -24,7 +24,7 @@ const server = https.createServer(options);
 const wss = new WebSocket.Server({
     server,
     verifyClient: (info, cb) => {
-        const allowedOrigin = 'https://your-web-server.com'; // Replace with your web server's origin
+        const allowedOrigin = 'https://servershards.com'; // Replace with your web server's origin
         if (info.origin === allowedOrigin) {
             cb(true);
         } else {
