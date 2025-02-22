@@ -11,18 +11,19 @@ if (!CONTAINER_ID) {
     process.exit(1);
 }
 
-// Using self-signed certificate
-const certOptions = {
-    key: fs.readFileSync("private.key"),
-    cert: fs.readFileSync("certificate.crt"),
+// Read SSL certificate and key
+const options = {
+    cert: fs.readFileSync("server.crt"),  // Your SSL certificate
+    key: fs.readFileSync("server.key")    // Your SSL private key
 };
 
-// Create HTTPS server
-const server = https.createServer(certOptions);
+// Create HTTPS server with SSL configuration
+const server = https.createServer(options);
 
+// Create WebSocket server on top of the HTTPS server
 const wss = new WebSocket.Server({ server });
 
-console.log(`WebSocket server running on wss://YOUR_IP:${PORT}`);
+console.log(`WebSocket server running on wss://localhost:${PORT}`);
 console.log(`Streaming logs for container: ${CONTAINER_ID}`);
 
 wss.on("connection", (ws) => {
@@ -46,5 +47,5 @@ wss.on("connection", (ws) => {
 
 // Start the HTTPS server
 server.listen(PORT, () => {
-    console.log(`Secure WebSocket server is running on wss://YOUR_IP:${PORT}`);
+    console.log(`Server listening on https://localhost:${PORT}`);
 });

@@ -15,3 +15,5 @@ Run service in background
 ```bash
 nohup node websocket-server.js <CONTAINER ID> > output.log 2>&1 &
 ```
+
+openssl req -newkey rsa:2048 -nodes -keyout server.key -x509 -out server.crt -days 365
