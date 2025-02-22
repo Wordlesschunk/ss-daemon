@@ -1,4 +1,6 @@
 const WebSocket = require("ws");
+const https = require("https");
+const fs = require("fs");
 const { spawn } = require("child_process");
 
 const PORT = 8080;
@@ -9,9 +11,18 @@ if (!CONTAINER_ID) {
     process.exit(1);
 }
 
-const wss = new WebSocket.Server({ port: PORT });
+// Using self-signed certificate
+const certOptions = {
+    key: fs.readFileSync("private.key"),
+    cert: fs.readFileSync("certificate.crt"),
+};
 
-console.log(`WebSocket server running on ws://localhost:${PORT}`);
+// Create HTTPS server
+const server = https.createServer(certOptions);
+
+const wss = new WebSocket.Server({ server });
+
+console.log(`WebSocket server running on wss://YOUR_IP:${PORT}`);
 console.log(`Streaming logs for container: ${CONTAINER_ID}`);
 
 wss.on("connection", (ws) => {
@@ -31,4 +42,9 @@ wss.on("connection", (ws) => {
         console.log("Client disconnected");
         logStream.kill();
     });
+});
+
+// Start the HTTPS server
+server.listen(PORT, () => {
+    console.log(`Secure WebSocket server is running on wss://YOUR_IP:${PORT}`);
 });
