@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a28c4e9a-a9aa-43fd-9d20-be7399ea53d7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/websocket-server.js" beforeDir="false" afterPath="$PROJECT_DIR$/websocket-server.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +20,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="https" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
@@ -30,7 +39,9 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;https&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;socketio&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.20.1&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.126&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/dylanjennings/PDEV/servershards-node-console-streamer&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -60,7 +71,9 @@
       <workItem from="1738311568020" duration="534000" />
       <workItem from="1738351023852" duration="506000" />
       <workItem from="1738353925343" duration="1234000" />
-      <workItem from="1740242530262" duration="2802000" />
+      <workItem from="1740242530262" duration="4610000" />
+      <workItem from="1741384411923" duration="1501000" />
+      <workItem from="1741591689322" duration="12000" />
     </task>
     <servers />
   </component>
